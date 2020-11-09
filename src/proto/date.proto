@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package utils;
+
+message Date {
+  //Specify 1 - 9999. 0 if specifying a Date without year
+  int32 year = 1;
+  //Specify 1 - 12
+  int32 month = 2;
+  //Specify 1 - 31 and valid for the year / month combination. Specify 0 if day is not significant
+  int32 day = 3;
+}
